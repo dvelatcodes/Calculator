@@ -32,6 +32,7 @@ background: linear-gradient(to right, #00AAFF, #00FF6C);
 
 .previous-operand, .current-operand{
     width: 100%;
+    min-height: 1.5rem;
     height: fit-content;
     display: flex;
     justify-content: flex-end;
