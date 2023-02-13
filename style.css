@@ -11,7 +11,23 @@ body{
     background: linear-gradient(to right, #b300ff, #ffea00);
 }
 
-
+.dev-name{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.1rem;
+    left: 1rem;
+    position: absolute;
+    bottom: 4rem;
+}
+@media screen and (max-width: 473px) {
+    .dev-name{
+        bottom: 0.9rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: fit-content;
+    }
+}
 .calculator-grid{
     width: fit-content;
     height: fit-content;
@@ -25,13 +41,54 @@ body{
 
 .output{
     display: flex;
-    width: 15vw;
+    width: 17vw;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width : 1044px) {
+    .output{
+        width: 25vw;
+    }
+}
+@media screen and (max-width : 715px) {
+    .output{
+        width: 35vw;
+    }
+}
+@media screen and (max-width : 531px) {
+    .output{
+        width: 45vw;
+    }
+}
+@media screen and (max-width : 371px) {
+    .output{
+        width: 55vw;
+    }
+}
+@media screen and (max-width : 346px) {
+    .output{
+        width: 60vw;
+    }
+}
+@media screen and (max-width : 303px) {
+    .output{
+        width: 70vw;
+    }
+}
+@media screen and (max-width : 260px) {
+    .output{
+        width: 80vw;
+    }
+}
+@media screen and (max-width : 216px) {
+    .output{
+        width: 90vw;
+    }
 }
 
 .previous-operand, .current-operand{
     width: 100%;
-    min-height: 1.5rem;
+    min-height: 2.2rem;
     height: fit-content;
     display: flex;
     justify-content: flex-end;
@@ -40,6 +97,11 @@ body{
     background-color: rgba(0, 0, 0, 0.715);
     word-wrap: break-word;
     font-size: 1.1rem;
+    position: relative;
+}
+
+.current-operand{
+    /* border-top: 0.5px solid rgba(0, 0, 0, 0.715); */
 }
 
 button{
